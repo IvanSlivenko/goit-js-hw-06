@@ -12,17 +12,17 @@ refs.btnUp.addEventListener('click', incrementic);
 
 
 function incrementic() {
-    const currentCounter = refs.spanCounter.textContent;
-    console.log('currentCounter',currentCounter);
+    const counterValue = refs.spanCounter.textContent;
+    console.log('counterValue',counterValue);
     // console.log("Будемо збільшувати значення спану");
-    refs.spanCounter.textContent =Number(currentCounter) + 1;
+    refs.spanCounter.textContent =Number(counterValue) + 1;
 }
 
 
 function decrementic() {
-    const currentCounter = refs.spanCounter.textContent;
-    console.log('currentCounter',currentCounter);
+    const counterValue = refs.spanCounter.textContent;
+    console.log('counterValue',counterValue);
     // console.log("Будемо зменшувати значення спану");
-    refs.spanCounter.textContent = Number(currentCounter)-1;
+    refs.spanCounter.textContent = Number(counterValue)-1;
 }
 
