@@ -12,3 +12,20 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+
+const listImage = document.querySelector('.gallery');
+console.log(listImage);
+const masuvTranzyt = [];
+
+const masuvImg = images.map((elem)=> { 
+  const itemImg = document.createElement('img');
+  itemImg.src = elem.url;
+  itemImg.alt = elem.alt;
+  itemImg.classList.add('iamge-tack');
+  masuvTranzyt.push(itemImg);
+
+}
+)
+listImage.append(...masuvTranzyt);
+
+

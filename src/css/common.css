@@ -22,3 +22,9 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+.iamge-tack{
+  width: 500px;
+  height: auto;
+  display: block;
+  
+}
