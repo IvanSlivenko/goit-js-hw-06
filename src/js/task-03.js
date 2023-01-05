@@ -14,7 +14,7 @@ const images = [
 ];
 
 const listImage = document.querySelector('.gallery');
-console.log(listImage);
+// console.log(listImage);
 const masuvTranzyt = [];
 
 const masuvImg = images.map((elem)=> { 
