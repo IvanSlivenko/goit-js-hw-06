@@ -23,6 +23,7 @@ function submitForms(event) {
         transytMasyv.password = event.currentTarget.elements.password.value;
 
         console.log(transytMasyv);
+        forms.reset();
     }
 
 
