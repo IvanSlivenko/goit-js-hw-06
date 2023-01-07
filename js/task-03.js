@@ -14,18 +14,41 @@ const images = [
 ];
 
 const listImage = document.querySelector('.gallery');
-// console.log(listImage);
-const masuvTranzyt = [];
 
-const masuvImg = images.map((elem)=> { 
-  const itemImg = document.createElement('img');
-  itemImg.src = elem.url;
-  itemImg.alt = elem.alt;
-  itemImg.classList.add('iamge-tack');
-  masuvTranzyt.push(itemImg);
+listImage.style.display = 'flex';
+listImage.style.flexDirection = 'column';
+listImage.style.listStyle= "none";
 
-}
-)
-listImage.append(...masuvTranzyt);
+const masivImages = images.map((elem) =>
+  `<li>
+      <img 
+        src=${elem.url} 
+        alt=${elem.alt}
+        width="300"
+        height="auto"
+        display="block">      
+    </img>
+  </li>`
+).join('')
+listImage.insertAdjacentHTML('beforeend',masivImages)
+// const masuvTranzyt = [];
+
+// const masuvImg = images.map((elem) => {
+//   const itemImg = document.createElement('img');
+
+//   itemImg.src = elem.url;
+//   itemImg.alt = elem.alt;
+//   itemImg.style.margin = '5px';
+//   itemImg.style.height = 'auto';
+//   itemImg.style.width = '300px';
+//   itemImg.style.display = 'block';
+
+//   masuvTranzyt.push(itemImg);
+ 
+//   console.log(masuvTranzyt);
+
+// }
+// )
+// listImage.append(...masuvTranzyt);
 
 
